@@ -1,33 +1,32 @@
-import { useState } from "react";
-import { MdMenu, MdClose } from "react-icons/md";
 import logo from "../../assets/images/logo.jpg";
 
 export const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const openMenu = () => {
-    setIsOpen((prev) => !prev);
-  };
-
   return (
-    <header className="mx-auto p-6 xl:container">
+    <header className="mx-auto px-3 py-6 xl:container">
       <div className="flex flex-row items-center justify-between">
-        <div>
+        <div className="p-3">
           <img src={logo} alt="" width={44} height={44} />
         </div>
-        <div className="cursor-pointer xl:hidden" onClick={openMenu}>
-          {isOpen ? <MdClose /> : <MdMenu />}
+        <nav className="flex flex-row items-center overflow-x-auto overflow-y-hidden">
+          <a className="cursor-pointer px-6 py-3 font-semibold hover:bg-gray-50">
+            File
+          </a>
+          <a className="cursor-pointer px-6 py-3 font-semibold hover:bg-gray-50">
+            Home
+          </a>
+          <a className="cursor-pointer px-6 py-3 font-semibold hover:bg-gray-50">
+            View
+          </a>
+          <a className="cursor-pointer px-6 py-3 font-semibold hover:bg-gray-50">
+            Support
+          </a>
+        </nav>
+        <div>
+          <a className="cursor-pointer px-6 py-3 font-semibold hover:bg-gray-50">
+            Log in
+          </a>
         </div>
       </div>
-      <nav className={`${isOpen ? "flex" : "hidden"} mt-3 flex-col`}>
-        <a>File</a>
-        <a>Home</a>
-        <a>Design</a>
-        <a>Insert</a>
-        <a>Page</a>
-        <a>Options</a>
-        <a>Support</a>
-      </nav>
     </header>
   );
 };
