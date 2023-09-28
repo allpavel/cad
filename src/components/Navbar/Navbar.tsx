@@ -22,17 +22,6 @@ export const Navbar = () => {
           >
             File
           </button>
-          <ul className={`${activeTab === "file" ? "block" : "hidden"}`}>
-            <li>
-              <button>Open</button>
-            </li>
-            <li>
-              <button>Save</button>
-            </li>
-            <li>
-              <button>Export</button>
-            </li>
-          </ul>
         </li>
         <li>
           <button
@@ -43,17 +32,6 @@ export const Navbar = () => {
           >
             Home
           </button>
-          <ul className={`${activeTab === "home" ? "block" : "hidden"}`}>
-            <li>
-              <button>Open2</button>
-            </li>
-            <li>
-              <button>Save2</button>
-            </li>
-            <li>
-              <button>Export2</button>
-            </li>
-          </ul>
         </li>
         <li>
           <button
@@ -64,17 +42,6 @@ export const Navbar = () => {
           >
             View
           </button>
-          <ul className={`${activeTab === "view" ? "block" : "hidden"}`}>
-            <li>
-              <button>Open3</button>
-            </li>
-            <li>
-              <button>Save3</button>
-            </li>
-            <li>
-              <button>Export3</button>
-            </li>
-          </ul>
         </li>
         <li>
           <button
@@ -85,17 +52,6 @@ export const Navbar = () => {
           >
             Support
           </button>
-          <ul className={`${activeTab === "support" ? "block" : "hidden"}`}>
-            <li>
-              <button>Open4</button>
-            </li>
-            <li>
-              <button>Save4</button>
-            </li>
-            <li>
-              <button>Export4</button>
-            </li>
-          </ul>
         </li>
       </ul>
     </nav>

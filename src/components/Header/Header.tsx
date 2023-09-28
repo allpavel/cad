@@ -2,11 +2,12 @@ import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
 import { Navbar } from "../Navbar/Navbar";
 import { LogIn } from "../LogIn/LogIn";
 import logo from "../../assets/images/logo.jpg";
+import { FileTab } from "../FileTab/FileTab";
 
 export const Header = () => {
   return (
-    <header className="container mx-auto px-3 py-6">
-      <div className="flex flex-row items-center justify-between">
+    <header className="w-screen px-3 py-6">
+      <div className="flex flex-row items-center justify-between divide-gray-600 border-b-2">
         <div className="flex flex-row items-center justify-between">
           <div className="p-3">
             <img src={logo} alt="" width={44} height={44} />
@@ -17,6 +18,7 @@ export const Header = () => {
         </div>
         <LogIn />
       </div>
+      <FileTab />
     </header>
   );
 };
