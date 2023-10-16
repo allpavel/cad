@@ -1,11 +1,4 @@
-import {
-  BiSave,
-  BiExport,
-  BiShare,
-  BiPrinter,
-  BiCopy,
-  BiPaste,
-} from "react-icons/bi";
+import { BiSave, BiExport, BiShare, BiPrinter } from "react-icons/bi";
 
 export const FileTab = () => {
   return (
@@ -33,18 +26,6 @@ export const FileTab = () => {
           <BiPrinter />
         </div>
         Print
-      </div>
-      <div className="flex w-14 cursor-pointer flex-col items-center justify-center hover:bg-gray-50">
-        <div>
-          <BiCopy />
-        </div>
-        Copy
-      </div>
-      <div className="flex w-14 cursor-pointer flex-col items-center justify-center hover:bg-gray-50">
-        <div>
-          <BiPaste />
-        </div>
-        Paste
       </div>
     </div>
   );

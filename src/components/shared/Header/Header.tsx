@@ -1,8 +1,9 @@
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
 import { Navbar } from "../Navbar/Navbar";
 import { LogIn } from "../LogIn/LogIn";
-import logo from "../../assets/images/logo.jpg";
 import { FileTab } from "../FileTab/FileTab";
+import { HomeTab } from "../HomeTab/HomeTab";
+import logo from "../../assets/images/logo.jpg";
 
 export const Header = () => {
   return (
@@ -19,6 +20,7 @@ export const Header = () => {
         <LogIn />
       </div>
       <FileTab />
+      <HomeTab />
     </header>
   );
 };
